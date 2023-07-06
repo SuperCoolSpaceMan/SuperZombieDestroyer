@@ -7,6 +7,7 @@ extends Area3D
 var hp = 50
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func get_damage(damage):
+	print("is working")
 	hp -= damage 
 	if hp <=0:
 		limb_rigid_body.visible = true 

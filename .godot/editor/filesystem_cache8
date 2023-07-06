@@ -1,0 +1,31 @@
+2a60927148abd1d33b818b535e306557
+::res://::1688682470
+icon.svg::CompressedTexture2D::6177056050007492620::1682854778::1688682471::1::::<><>::
+README.md::TextFile::-1::1688681040::0::1::::<><>::
+::res://DECAL/::1687105775
+Bullet decal.png::CompressedTexture2D::4121602799760392967::1682854778::1688682471::1::::<><>::
+decal.tscn::PackedScene::4384794623480604133::1682854778::0::1::::<><>::uid://byysgwrfp65yx
+::res://ENEMY/::1688221252
+Enemy(animations, dismemberment).glb::PackedScene::8516640891594327701::1687483104::1688682473::1::::<><>::
+ENEMY.gd::GDScript::-1::1687485685::0::1::::<>CharacterBody3D<>::
+ENEMY.tscn::PackedScene::6092703365309095345::1688221252::0::1::::<><>::res://ENEMY/ENEMY.gd<>res://ENEMY/LimbArea.gd
+LimbArea.gd::GDScript::-1::1688155768::0::1::::<>Area3D<>::
+::res://PLAYER AND MAIN/::1688191727
+fpds.gd::GDScript::-1::1687485109::0::1::::<>CharacterBody3D<>::
+fps.tscn::PackedScene::3077895304771700866::1687484866::0::1::::<><>::res://PLAYER AND MAIN/fpds.gd<>uid://dr2btb7nnwm5r<>res://PLAYER AND MAIN/Hand.gd<>uid://2vja3tv4djnv
+Hand.gd::GDScript::-1::1682854778::0::1::::<>Node3D<>::
+main.tscn::PackedScene::7442285554770344724::1688191727::0::1::::<><>::uid://cs2l61auxq6yv<>uid://wt8iepcx7ghj
+::res://WEAPON_HR's/::1688152326
+AssaultGun.tscn::PackedScene::8408305341928431069::1688152326::0::1::::<><>::res://WEAPON_PICK_script/WEAPON_SCRIPT/WEAPON 2 HR.gd
+Pistol.tscn::PackedScene::1938998664995142203::1688152326::0::1::::<><>::res://WEAPON_PICK_script/WEAPON_SCRIPT/WEAPON 1 HR.gd
+Shotgun.tscn::PackedScene::7582444100844717441::1688152326::0::1::::<><>::res://WEAPON_PICK_script/WEAPON_SCRIPT/WEAPON 3 HR.gd
+::res://WEAPON_PICKUPS/::1682854778
+WEAPON 1.tscn::PackedScene::6866203288207311076::1682854778::0::1::::<><>::res://WEAPON_PICK_script/WEAPON_PICKUP.gd
+WEAPON 2.tscn::PackedScene::2196964078428004530::1682854778::0::1::::<><>::res://WEAPON_PICK_script/WEAPON_PICKUP.gd
+WEAPON 3.tscn::PackedScene::1585395917864718975::1682854778::0::1::::<><>::res://WEAPON_PICK_script/WEAPON_PICKUP.gd
+::res://WEAPON_PICK_script/::1682854778
+WEAPON_PICKUP.gd::GDScript::-1::1682854778::0::1::::<>RigidBody3D<>::
+::res://WEAPON_PICK_script/WEAPON_SCRIPT/::1687486323
+WEAPON 1 HR.gd::GDScript::-1::1687486323::0::1::::<>Node3D<>::
+WEAPON 2 HR.gd::GDScript::-1::1687486323::0::1::::<>Node3D<>::
+WEAPON 3 HR.gd::GDScript::-1::1687486323::0::1::::<>Node3D<>::
