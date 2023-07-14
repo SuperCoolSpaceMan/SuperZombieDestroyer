@@ -1,0 +1,7 @@
+AnimationTree
+Label3D
+Label
+CollisionShape3D
+RigidBody3D
+Area3D
+BoneAttachment3D

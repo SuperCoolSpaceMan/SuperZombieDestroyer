@@ -1,3 +1,4 @@
 res://ENEMY/ENEMY.tscn
 res://PLAYER AND MAIN/main.tscn
-res://ENEMY/LimbArea.gd
+res://ENEMY/ENEMY.gd
+res://ENEMY/AnimationManager.gd
