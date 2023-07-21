@@ -29,3 +29,16 @@ func _on_chase_pressed():
 
 func _on_death_pressed():
 	Parent_node.state = Parent_node.DEATH
+
+
+func _on_crawling_idle_pressed():
+	Parent_node.state = Parent_node.CRAWLING_IDLE
+
+
+func _on_crawling_pressed():
+	Parent_node.state = Parent_node.CRAWLING 
+
+
+func _on_is_shot_in_leg_pressed():
+	Parent_node.state = Parent_node.IS_SHOT_IN_LEG
+
