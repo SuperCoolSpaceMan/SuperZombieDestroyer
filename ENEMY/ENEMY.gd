@@ -16,44 +16,35 @@ func _physics_process(delta):
 	match state:
 		IDLE: # 0
 			DebugLabel.text = "IDLE STATE"
-			animation_manager.is_running = false
-			animation_manager.is_idle = true
+			animation_manager.travel_to_idle()
+
 		PATROL: #1
 			DebugLabel.text = "PATROL STATE"
+			animation_manager.travel_to_walking()
+
 		CHASING: #2
 			DebugLabel.text = "CHASE STATE"
-			animation_manager.is_running = true
-			animation_manager.is_idle = false
+			animation_manager.travel_to_run()
+
 		DEATH: #3
 			DebugLabel.text = "DEATH STATE"
-
-
-
+			animation_manager.travel_to_death()
 
 		CRAWLING_IDLE: #4
 			DebugLabel.text = "CRAWLING_IDLE STATE"
-			animation_manager.is_crawling_idle = true
-			animation_manager.is_crawling = false
-			animation_manager.is_running = false
-			animation_manager.is_idle = false
-
-
+			animation_manager.travel_to_Crawling_Idle()
 
 		CRAWLING: #5
 			DebugLabel.text = "CRAWLING STATE"
-			animation_manager.is_crawling = true
-			animation_manager.is_crawling_idle = false
+			animation_manager.travel_to_crawling()
+
 
 		IS_SHOT_IN_LEG: #5
 			DebugLabel.text = "IS_SHOT_LEG STATE"
-
-			animation_manager.is_crawling_idle = false
-			animation_manager.is_crawling = false
-			animation_manager.is_running = false
-			animation_manager.is_idle = true
-			animation_manager.is_shot_in_leg = true
 			animation_manager.travel_to_hit_legs()
 
+
+#still need attack, hit, hit_head
 
 
 

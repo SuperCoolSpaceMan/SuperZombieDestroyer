@@ -1,5 +1,5 @@
 res://ENEMY/ENEMY.tscn
 res://ENEMY/AnimationManager.gd
-res://DEBUG/Debug.gd
 res://ENEMY/ENEMY.gd
+res://PLAYER AND MAIN/fpds.gd
 res://PLAYER AND MAIN/main.tscn

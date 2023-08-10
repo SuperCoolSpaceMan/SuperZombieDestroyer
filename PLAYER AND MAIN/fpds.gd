@@ -111,10 +111,11 @@ func _ready():
 #CHECKS THE MOUSE MOVEMENT INPUT.
 func _input(event):
 	#GET MOUSE INPUT FOR CAMERA ROTATION AND CLAMP THE UP AND DOWN ROTATIONS.
-	if event is InputEventMouseMotion:
+	if event is InputEventMouseMotion and Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 		rotate_y(deg_to_rad(-event.relative.x * mouse_sense))
 		head.rotate_x(deg_to_rad(-event.relative.y * mouse_sense))
 		head.rotation.x = clamp(head.rotation.x, deg_to_rad(-90.0), deg_to_rad(90.0))
+		
 
 # CALLED EVERY FRAME. 'DELTA' IS THE ELAPSED TIME SINCE THE PREVIOUS FRAME.
 # ALSO THIS WILL HANDLE ALL THE PLAYERS MOVEMENT AND PHYSICS.
