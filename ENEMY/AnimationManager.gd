@@ -3,7 +3,7 @@ extends Node3D
 
  
 
-@onready var animation_tree = $AnimationTree
+@onready var animation_tree = $AnimationTree #referance
 @onready var anim_state_machine = animation_tree["parameters/playback"] #accessing animation tree canvas
 
 
@@ -38,5 +38,6 @@ func travel_to_crawling():
 func travel_to_Crawling_Idle():
 	animation_tree["parameters/playback"].travel("Crawling_Idle")
 
-
-#still need attack, hit, hit_head
+func travel_to_attack():
+	animation_tree["parameters/playback"].travel("attack")
+# hit, hit_head

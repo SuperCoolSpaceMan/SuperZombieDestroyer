@@ -1,5 +1,4 @@
-res://ENEMY/ENEMY.tscn
-res://ENEMY/AnimationManager.gd
-res://ENEMY/ENEMY.gd
-res://PLAYER AND MAIN/fpds.gd
 res://PLAYER AND MAIN/main.tscn
+res://ENEMY/ENEMY.tscn
+res://PLAYER AND MAIN/fps.tscn
+res://GAME OVER/GAME OVER.tscn

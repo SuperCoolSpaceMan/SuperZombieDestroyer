@@ -10,6 +10,37 @@ var state = IDLE
 
 var hp = 150
 
+# 3dnavigation variables
+var movement_speed: float = 2.0
+var movement_target_position: Vector3 = Vector3(-3.0,0.0,2.0)
+
+@onready var navigation_agent: NavigationAgent3D = $NavigationAgent3D
+
+
+@onready var player_node = get_tree().get_nodes_in_group("player").front()
+
+func navigate():
+	if navigation_agent.is_navigation_finished():
+		return
+	var current_agent_position: Vector3 = global_position
+	var next_path_position: Vector3 = navigation_agent.get_next_path_position()
+
+	var new_velocity: Vector3 = next_path_position - current_agent_position
+	look_at(next_path_position , Vector3.UP)
+	new_velocity = new_velocity.normalized()
+	new_velocity = new_velocity * movement_speed
+
+	velocity = new_velocity
+	move_and_slide()
+
+func _ready():
+	# These values need to be adjusted for the actor's speed
+	# and the navigation layout.
+	navigation_agent.path_desired_distance = 0.5
+	navigation_agent.target_desired_distance = 0.5
+
+func set_movement_target(movement_target: Vector3):
+	navigation_agent.set_target_position(movement_target)
 
 
 func _physics_process(delta):
@@ -24,7 +55,15 @@ func _physics_process(delta):
 
 		CHASING: #2
 			DebugLabel.text = "CHASE STATE"
-			animation_manager.travel_to_run()
+
+			set_movement_target(player_node.global_position)
+
+			if global_position.distance_to(player_node.global_position) <= 1:
+				animation_manager.travel_to_attack()
+			else:
+				navigate()
+				animation_manager.travel_to_run()
+
 
 		DEATH: #3
 			DebugLabel.text = "DEATH STATE"
@@ -37,6 +76,8 @@ func _physics_process(delta):
 		CRAWLING: #5
 			DebugLabel.text = "CRAWLING STATE"
 			animation_manager.travel_to_crawling()
+			set_movement_target(player_node.global_position)
+			look_at(player_node.global_position, Vector3.UP)
 
 
 		IS_SHOT_IN_LEG: #5

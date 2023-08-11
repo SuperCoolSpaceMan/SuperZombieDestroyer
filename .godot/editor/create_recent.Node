@@ -1,9 +1,12 @@
+CollisionShape3D
+Area3D
+Label
+NavigationAgent3D
+MeshInstance3D
+NavigationRegion3D
 Button
 Control
 AnimationTree
 Label3D
-Label
-CollisionShape3D
 RigidBody3D
-Area3D
 BoneAttachment3D

@@ -1,5 +1,8 @@
 extends CharacterBody3D
 
+
+var hp = 150
+
 # MOVEMENT SPEEDS.
 var speed
 
@@ -178,3 +181,7 @@ func CROUCH(delta):
 		player_capsule.shape.height += crouch_speed * delta
 	player_capsule.shape.height =  clamp(player_capsule.shape.height, crouch_height,normal_height)
 
+func get_damage(damage):
+	hp -= damage 
+	if hp <=0:
+		get_tree().change_scene_to_file("res://GAME OVER/GAME OVER.tscn")

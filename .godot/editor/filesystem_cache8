@@ -1,5 +1,5 @@
-2a60927148abd1d33b818b535e306557
-::res://::1690477062
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1691796564
 icon.svg::CompressedTexture2D::6177056050007492620::1682854778::1688682471::1::::<><>::
 README.md::TextFile::-1::1688681040::0::1::::<><>::
 ::res://DEBUG/::1689974563
@@ -7,17 +7,23 @@ Debug.gd::GDScript::-1::1689974563::0::1::::<>Control<>::
 ::res://DECAL/::1688682471
 Bullet decal.png::CompressedTexture2D::4121602799760392967::1682854778::1688682471::1::::<><>::
 decal.tscn::PackedScene::4384794623480604133::1682854778::0::1::::<><>::uid://byysgwrfp65yx
-::res://ENEMY/::1689975806
-AnimationManager.gd::GDScript::-1::1689975740::0::1::::<>Node3D<>::
+::res://ENEMY/::1691796282
+AnimationManager.gd::GDScript::-1::1691794727::0::1::::<>Node3D<>::
 Enemy(animations, dismemberment).glb::PackedScene::8516640891594327701::1687483104::1688682473::1::::<><>::
-ENEMY.gd::GDScript::-1::1689975797::0::1::::<>CharacterBody3D<>::
-ENEMY.tscn::PackedScene::6092703365309095345::1689975806::0::1::::<><>::res://ENEMY/ENEMY.gd<>res://ENEMY/LimbArea.gd<>res://ENEMY/AnimationManager.gd<>res://DEBUG/Debug.gd
+ENEMY.gd::GDScript::-1::1691794727::0::1::::<>CharacterBody3D<>::
+ENEMY.tscn::PackedScene::6092703365309095345::1691796282::0::1::::<><>::res://ENEMY/ENEMY.gd<>res://ENEMY/LimbArea.gd<>res://ENEMY/AnimationManager.gd<>res://DEBUG/Debug.gd<>res://ENEMY/VisionArea.gd<>res://ENEMY/Hitbox.gd
+Hitbox.gd::GDScript::-1::1691796108::0::1::::<>Area3D<>::
 LimbArea.gd::GDScript::-1::1688682803::0::1::::<>Area3D<>::
-::res://PLAYER AND MAIN/::1689975845
-fpds.gd::GDScript::-1::1687485109::0::1::::<>CharacterBody3D<>::
-fps.tscn::PackedScene::3077895304771700866::1687484866::0::1::::<><>::res://PLAYER AND MAIN/fpds.gd<>uid://dr2btb7nnwm5r<>res://PLAYER AND MAIN/Hand.gd<>uid://2vja3tv4djnv
+VisionArea.gd::GDScript::-1::1691794809::0::1::::<>Area3D<>::
+::res://GAME OVER/::1691796283
+GAME OVER.tscn::PackedScene::3767812146726881349::1691796283::0::1::::<><>::
+::res://PLAYER AND MAIN/::1691796551
+fpds.gd::GDScript::-1::1691796551::0::1::::<>CharacterBody3D<>::
+fps.tscn::PackedScene::3077895304771700866::1691796541::0::1::::<><>::res://PLAYER AND MAIN/fpds.gd<>uid://dr2btb7nnwm5r::::res://WEAPON_HR's/AssaultGun.tscn<>res://PLAYER AND MAIN/Hand.gd<>uid://2vja3tv4djnv::::res://WEAPON_HR's/Pistol.tscn
 Hand.gd::GDScript::-1::1682854778::0::1::::<>Node3D<>::
-main.tscn::PackedScene::7442285554770344724::1689975845::0::1::::<><>::uid://cs2l61auxq6yv<>uid://wt8iepcx7ghj
+main.tscn::PackedScene::7442285554770344724::1691796282::0::1::::<><>::uid://655p7ahoy16x::::res://test room textures/wall-diff.png<>uid://cs2l61auxq6yv::::res://ENEMY/ENEMY.tscn<>uid://wt8iepcx7ghj::::res://WEAPON_PICKUPS/WEAPON 3.tscn
+::res://test room textures/::1691709342
+wall-diff.png::CompressedTexture2D::2239635463177300253::1691709244::1691709342::1::::<><>::
 ::res://WEAPON_HR's/::1688152326
 AssaultGun.tscn::PackedScene::8408305341928431069::1688152326::0::1::::<><>::res://WEAPON_PICK_script/WEAPON_SCRIPT/WEAPON 2 HR.gd
 Pistol.tscn::PackedScene::1938998664995142203::1688152326::0::1::::<><>::res://WEAPON_PICK_script/WEAPON_SCRIPT/WEAPON 1 HR.gd
