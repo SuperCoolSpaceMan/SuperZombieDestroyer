@@ -10,6 +10,8 @@ var state = IDLE
 
 var hp = 150
 
+var has_legs = true
+
 # 3dnavigation variables
 var movement_speed: float = 2.0
 var movement_target_position: Vector3 = Vector3(-3.0,0.0,2.0)
@@ -94,4 +96,10 @@ func get_damage(damage):
 	hp -= damage 
 	if hp <=0:
 		queue_free()
+
+
+
+func _on_limb_area_leg_destroyed():
+	has_legs = false 
+	state = CRAWLING_IDLE
 

@@ -1,4 +1,8 @@
-res://PLAYER AND MAIN/main.tscn
 res://ENEMY/ENEMY.tscn
+res://ENEMY/LimbArea.gd
+res://PLAYER AND MAIN/main.tscn
 res://PLAYER AND MAIN/fps.tscn
 res://GAME OVER/GAME OVER.tscn
+res://WEAPON_HR's/Pistol.tscn
+res://ENEMY/ENEMY.gd
+res://ENEMY/VisionArea.gd
